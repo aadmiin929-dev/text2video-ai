@@ -4,3 +4,4 @@ gtts
 Pillow
 imageio-ffmpeg
 python-dotenv
+requests
