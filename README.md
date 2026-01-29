@@ -34,6 +34,20 @@ http://localhost:8000/generate
 }
 http://localhost:8000/video/result.mp4
 
+## ▶ Запуск в 1 клик
+
+### Windows
+Дважды кликни:
+start_server.bat
+
+### macOS / Linux
+```bash
+chmod +x start_server.sh
+./start_server.sh
+
+
+
+
 
 
 
