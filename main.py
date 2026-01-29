@@ -1,6 +1,8 @@
 from moviepy.editor import *
 from gtts import gTTS
+from ai import inspire_me, improve_script
 import os
+
 
 # Paths
 SCRIPT_PATH = "input/script.txt"
@@ -30,4 +32,15 @@ video = video.set_audio(audio)
 
 video.write_videofile(VIDEO_PATH, fps=24)
 
+print("1 - Вдохнови меня (ИИ)")
+print("2 - Улучшить мой текст")
+choice = input("Выбери 1 или 2 (Enter — пропустить): ")
+
+if choice == "1":
+    text = inspire_me()
+    print("ИИ идея:\n", text)
+
+elif choice == "2":
+    text = improve_script(text)
+    print("Улучшенный текст:\n", text)
 print("✅ Video created:", VIDEO_PATH)
