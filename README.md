@@ -16,3 +16,29 @@ https://www.python.org/downloads/
 ### 3. Установи зависимости
 ```bash
 pip install -r requirements.txt
+
+
+## 🖥 Запуск сервера (для Android / Web)
+
+```bash
+pip install -r requirements.txt
+uvicorn server:app --host 0.0.0.0 --port 8000
+
+http://localhost:8000/generate
+
+{
+  "text": "Текст для видео"
+}
+http://localhost:8000/video/result.mp4
+
+
+
+
+
+
+
+
+
+
+
+
