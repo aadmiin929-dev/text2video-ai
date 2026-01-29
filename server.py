@@ -1,3 +1,4 @@
+from fastapi.responses import FileResponse
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.staticfiles import StaticFiles
@@ -26,3 +27,18 @@ def generate_video(req: VideoRequest):
         "video_url": f"/video/result.mp4",
         "video_id": video_id
     }
+
+@app.get("/")
+def index():
+    return FileResponse("web/index.html")
+
+
+
+
+
+
+
+
+
+
+
